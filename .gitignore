@@ -1,0 +1,44 @@
+# Secrets / Credentials
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+pyvenv.cfg
+
+# Python Cache / Compiles
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# Node / Frontend Dependencies
+node_modules/
+jspm_packages/
+web_modules/
+
+# Frontend Builds
+dist/
+build/
+out/
+.next/
+
+# IDE / OS specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+Thumbs.db
