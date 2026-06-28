@@ -898,6 +898,33 @@ button, input, select, textarea {
   overflow: hidden;
 }
 
+/* Auth Portal Card */
+.auth-portal-box {
+  width: 100%;
+  max-width: 440px;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Quiz Config Selector Grid */
+.quiz-config-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Learning Intelligence Roadmap Grid */
+.learning-roadmap-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
 /* ============================================================
    RESPONSIVE — TABLET (≤ 900px)
    ============================================================ */
@@ -1001,7 +1028,7 @@ button, input, select, textarea {
 
   /* Dashboard */
   .dashboard-container {
-    padding: 14px 14px 80px 14px;
+    padding: 16px 16px 24px 16px;
     gap: 16px;
   }
   .dashboard-banner {
@@ -1025,7 +1052,7 @@ button, input, select, textarea {
     margin-bottom: 10px;
   }
   .metrics-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     gap: 10px;
   }
   .metric-card {
@@ -1039,18 +1066,19 @@ button, input, select, textarea {
     font-size: 0.7rem;
   }
   .tutors-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
   .tutor-card {
-    padding: 16px 14px;
-    gap: 10px;
+    padding: 18px 16px;
+    gap: 12px;
   }
   .tutor-name {
     font-size: 0.95rem;
   }
   .tutor-title-text {
-    display: none;
+    display: inline-block;
+    font-size: 0.75rem;
   }
   .tutor-desc {
     font-size: 0.8rem;
@@ -1075,10 +1103,14 @@ button, input, select, textarea {
   .glass-panel {
     border-radius: 12px;
   }
+  .auth-portal-box {
+    padding: 24px 20px;
+    gap: 20px;
+  }
 
   /* Page containers */
   .page-container {
-    padding: 14px 14px 80px 14px;
+    padding: 16px 16px 24px 16px;
     gap: 20px;
   }
 
@@ -1093,6 +1125,18 @@ button, input, select, textarea {
     grid-template-columns: 1fr;
     min-height: auto;
     overflow: visible;
+  }
+
+  /* Quiz Generator Config form */
+  .quiz-config-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Learning Intelligence Roadmap */
+  .learning-roadmap-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
 

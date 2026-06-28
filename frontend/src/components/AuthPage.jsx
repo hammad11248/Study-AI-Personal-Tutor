@@ -86,17 +86,7 @@ export default function AuthPage({ apiBaseUrl, onAuthSuccess, onGuestLogin }) {
       }} />
 
       {/* Auth Portal Box */}
-      <div className="glass-panel animate-fade-in" style={{
-        width: '100%',
-        maxWidth: '440px',
-        padding: '40px',
-        position: 'relative',
-        zIndex: 1,
-        boxShadow: '0 20px 50px rgba(0, 0, 0, 0.4)',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '28px'
-      }}>
+      <div className="glass-panel animate-fade-in auth-portal-box">
         {/* Header/Logo */}
         <div style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}>
           <div style={{

@@ -123,7 +123,7 @@ function RoadmapTab({ api }) {
           AI designs a week-by-week plan tailored to your level and goal.
         </p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+        <div className="learning-roadmap-grid">
           <div style={{ gridColumn: '1/-1' }}>
             <label style={labelStyle}>Topic / Subject</label>
             <input
